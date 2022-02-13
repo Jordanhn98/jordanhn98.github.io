@@ -1,0 +1,76 @@
+/* CSS layout is mostly based on the box model. Each box taking up space on your page has properties like:
+
+padding, the space around the content. In the example below, it is the space around the paragraph text.
+border, the solid line that is just outside the padding.
+margin, the space around the outside of the border. 
+
+In this section we also use:
+
+width (of an element).
+background-color, the color behind an element's content and padding.
+color, the color of an element's content (usually text).
+text-shadow sets a drop shadow on the text inside an element.
+display sets the display mode of an element. (keep reading to learn more)
+
+*/
+
+/* you can change all of a type of an element */
+p {
+    color: black;
+}
+
+/* you can change a unique element specified by the ID */
+#my-id {
+    color: blue;
+}
+
+/* you can change all elements given a class */
+.class1 {
+    color: green
+}
+
+/* you can change style for the whole sheet */
+html {
+    font-size: 30px;
+    /* px means "pixels": the base font size is now 10 pixels high  */
+    font-family: 'Open Sans Condensed', sans-serif;
+    /* this should be the rest of the output you got from Google fonts: https://fonts.google.com/ */
+    background-color: #77A649;
+}
+
+/* find colors here https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool */
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #835E39;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+
+/* formatting my header */
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0 0 0;
+    color: #77A649;
+    text-shadow: 3px 3px 1px black;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px 0;
+    /* top right bottom left */
+    color: #77A649;
+    text-shadow: 3px 3px 1px black;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    border: 2px solid black;
+}
